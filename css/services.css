@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main .services {
+    width: 100%;
+    height: 500px;
+    background-color: #ebedee;
+    margin-top: 100px;
+}
+
+main .services .container_services {
+    width: 90%;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+main .services .container_services .caja {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .services .container_services .caja .service {
+    width: 30px;
+    height: 250px;
+    /*border: 1px solid #000;*/
+    position: relative;
+    text-align: end;
+}
+
+main .services .container_services .caja .service .rota {
+    position: absolute;
+    top: 70px;
+    transform: rotate(270deg);
+    font-family: Amiri;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+main .services .container_services .caja .card {
+    width: 25%;
+    height: 250px;
+    border: 1px solid #000;
+    
+    position: relative;
+}
+
+main .services .container_services .caja .card h3 {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    z-index: 10;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+main .services .container_services .caja .card h4 {
+    position: absolute;
+    top: 110%;
+}
+
+main .services .container_services .caja .card img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+@media screen and  (max-width: 1000px) {
+
+    main .services .container_services .caja .service .rota {
+        top: 50px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+
+    main .services .container_services .caja .service {
+        width: 100%;
+        height: 150px;
+    }
+
+    main .services .container_services .caja .service .rota {
+        transform: rotate(0);
+    }
+
+    main .services .container_services .caja .card {
+        width: 70%;
+    }
+}

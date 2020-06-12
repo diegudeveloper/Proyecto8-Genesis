@@ -14,8 +14,11 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /*position: fixed;*/
+}
 
-    
+header .frame {
+    display: none;
 }
 
 header .container .menu {
@@ -46,6 +49,10 @@ header .container .menu ul .center h2 {
     line-height: 1.2;
 }
 
+header .container .center1 {
+    display: none;
+}
+
 header .container .menu ul .center h3 {
     font-family: Amiri;
     font-weight: 400;
@@ -58,7 +65,7 @@ header .container .menu ul li {
     list-style: none;
 }
 
-header .container .menu ul li a{
+header .container .menu ul li a {
     text-decoration: none;
     color: #000;
     font-family: 'Amiri', serif;
@@ -69,12 +76,13 @@ header .container .menu ul li a{
 }
 
 header .textwidget {
-    width: 450px;
+    width: 500px;
     min-width: 250px;
     height: 450px;
     min-height: 250px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 100px;
     
     display: flex;
     justify-content: center;
@@ -94,7 +102,149 @@ header .textwidget h1 {
 header .textwidget h4 {
     font-family: Amiri;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 3px;
     margin-top: 20px;
+}
+
+
+@media screen and  (max-width: 1000px) {
+
+    header .textwidget {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    header .container .menu ul .center {
+        display: none;
+    }
+
+    header .container .center1 {
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+
+        font-family: Amiri;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+
+    header .container .menu ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+
+    header .container .center1 {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    header .container .menu ul {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    header .textwidget {
+        margin-top: 100px;
+    }
+}
+
+@media screen and  (max-width: 375px) {
+
+    header .container .menu {
+        display: none;
+    }
+
+    header .container .center1 {
+        font-size: 22px;
+        padding-top: 80px;
+    }
+
+    header .textwidget {
+        margin-top: 0;
+    }
+
+    header .textwidget h1 {
+        text-align: center;
+    }
+
+    header .textwidget h4 {
+        text-align: center;
+    }
+
+    /*** menu responsive***/ 
+
+    header .frame {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 50px;
+        margin-top: -400px;
+        margin-left: -180px;
+        border-radius: 2px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background: #2aa8ae;
+        color: #333;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+      
+    header .frame .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      
+    header .frame .center .hamburger {
+        position: relative;
+        cursor: pointer;
+    }
+      
+    header .frame .center .hamburger .bar {
+        position: relative;
+        display: block;
+        background: #fff;
+        margin-bottom: 8px;
+        width: 70px;
+        height: 5px;
+        border-radius: 10px;
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.5);
+        transition: all 0.5s;
+    }
+      
+    .hamburger:hover {
+        opacity: 0.7;
+        transition: all 0.6s;
+    }
+      
+    .one {
+        margin-bottom: 0;
+    }
+      
+    .two {
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+      
+    .three {
+        margin-top: -30px;
+    }
+      
+    .one-rotate {
+        transform: rotate(-135deg);
+    }
+      
+    .three-rotate {
+        transform: rotate(135deg);
+    }
+      
 }
