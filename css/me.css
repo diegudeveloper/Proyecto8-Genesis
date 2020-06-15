@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.aboutme {
+    width: 100%;
+    height: auto;
+}
+
+.aboutme .container_me {
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutme .container_me .grade {
+    width: 30px;
+    height: 250px;
+    /* border: 1px solid #000; */
+    position: relative;
+    text-align: end;
+    margin-left: 45px;
+    padding-left: 58px;
+    
+}
+
+.aboutme .container_me .grade h3 {
+    position: absolute;
+    top: -60px;
+    transform: rotate(270deg);
+    font-family: Amiri;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+
+.aboutme .container_me .conta_imag {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-right: -60px;
+}
+
+.aboutme .container_me .conta_imag img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutme .container_me .text_img {
+    width: 50%;
+    height: auto;
+}
+
+.aboutme .container_me .text_img {
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: start;
+    margin-left: 70px;
+    
+}
+
+.aboutme .container_me .text_img h2 {
+    font-size: 60px;
+}
+
+.aboutme .container_me .text_img p {
+    margin-bottom: 20px;
+}
+
+.aboutme .container_me .botton {
+    display: inline;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    background-color: #ebedee;
+}
+
+.aboutme .container_me .botton:hover {
+    background-color: #fff;
+}
+
+.aboutme .container_me .botton a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+@media screen and  (max-width: 1000px) {
+
+    .aboutme .container_me {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutme .container_me .grade {
+        width: 100%;
+        height: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .aboutme .container_me .grade h3 {
+        transform: rotate(0);
+    }
+
+    .aboutme .container_me .conta_imag {
+        width: 350px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .aboutme .container_me .conta_imag img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .aboutme .container_me .text_img {
+        width: 600px;
+        margin: 0;
+    }
+
+    .aboutme .container_me .text_img h2 {
+        font-size: 45px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutme .container_me .text_img p {
+        padding-right: 50px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    
+}
