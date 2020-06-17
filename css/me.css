@@ -148,6 +148,41 @@
         margin: 0;
         margin-bottom: 15px;
     }
+}
+
+@media screen and  (max-width: 768px) {
+
+    .aboutme .container_me .conta_imag {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 450px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .aboutme .container_me .conta_imag img {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutme .container_me .text_img {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+
+    .aboutme .container_me .botton {
+        display: block;
+        width: 180px;
+        margin-top: 20px;
+    }
+
+    .aboutme .container_me .text_img p {
+        padding-right: 0;
+    }
 
     
 }
