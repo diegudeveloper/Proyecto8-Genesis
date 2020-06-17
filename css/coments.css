@@ -7,7 +7,7 @@
 .coments {
     width: 100%;
     height: auto;
-    background-image: url(..img/coments/coments1.jpg);
+    background-image: url(../img/coments/coments1.jpg);
     background-color: hsl(0, 2%, 90%);
     background-blend-mode: soft-light;
 
