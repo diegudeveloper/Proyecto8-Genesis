@@ -114,3 +114,15 @@ main .services .container_services .caja .card img {
         margin-bottom: 100px;
     }
 }
+
+@media screen and  (max-width: 375px) {
+
+    main .services {
+        margin-top: 50px;
+        height: 1250px;
+    }
+
+    main .services .container_services .caja {
+        padding-top: 20px;
+    }
+}

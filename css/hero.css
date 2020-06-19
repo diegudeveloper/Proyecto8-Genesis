@@ -37,8 +37,10 @@ header .container .menu ul {
     justify-content: space-between;
 }
 
+
 header .container .menu ul .center {
     text-align: center;
+    display: none;
 }
 
 header .container .menu ul .center h2 {
@@ -50,7 +52,16 @@ header .container .menu ul .center h2 {
 }
 
 header .container .center1 {
-    display: none;
+    display: block;
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+
+    font-family: Amiri;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
 }
 
 header .container .menu ul .center h3 {
@@ -76,13 +87,14 @@ header .container .menu ul li a {
 }
 
 header .textwidget {
-    width: 500px;
+    width: 600px;
     min-width: 250px;
     height: 450px;
     min-height: 250px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 100px;
+    text-align: center;
     
     display: flex;
     justify-content: center;
