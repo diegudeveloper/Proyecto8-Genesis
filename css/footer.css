@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer .footer {
+    width: 100%;
+    height: auto;
+
+    padding: 15px 10px;
+    background-color: #000;
+}
+
+footer .footer h2 {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+footer .footer span {
+    color: #f7e811;
+    font-size: 16px;
+}
+
+

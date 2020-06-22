@@ -24,7 +24,7 @@ main .Posts .container_Posts {
 main .Posts .container_Posts .caja {
     width: 100%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ main .Posts .container_Posts .caja .Posts {
 
 main .Posts .container_Posts .caja .Posts .rota {
     position: absolute;
-    top: 35px;
+    top: 65px;
     transform: rotate(270deg);
     font-family: Amiri;
     font-weight: 400;
@@ -54,6 +54,22 @@ main .Posts .container_Posts .caja .card {
     width: 25%;
     height: 250px;
     position: relative;
+}
+
+main .Posts .container_Posts .caja .card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+main .Posts .container_Posts .caja h4 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    
 }
 
 main .Posts .container_Posts .caja .card h3 {
@@ -91,7 +107,7 @@ main .Posts .container_Posts .caja .card img {
 @media screen and  (max-width: 768px) {
 
     main .Posts {
-        height: 1200px;
+        height: 1050px;
     }
 
     main .Posts .container_Posts .caja {
@@ -100,7 +116,7 @@ main .Posts .container_Posts .caja .card img {
 
     main .Posts .container_Posts .caja .Posts {
         width: 100%;
-        height: 150px;
+        height: 0;
     }
 
     main .Posts .container_Posts .caja .Posts .rota {
@@ -108,9 +124,23 @@ main .Posts .container_Posts .caja .card img {
     }
 
     main .Posts .container_Posts .caja .card {
-        width: 70%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .Posts .container_Posts .caja h4 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        
     }
 }
