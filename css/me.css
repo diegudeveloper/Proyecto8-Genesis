@@ -183,6 +183,19 @@
     .aboutme .container_me .text_img p {
         padding-right: 0;
     }
+}
 
-    
+@media screen and  (max-width: 375px) {
+
+    .aboutme .container_me .botton {
+        display: block;
+        width: 180px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .aboutme .container_me .botton a {
+        
+        font-size: 12px;
+    }
 }
