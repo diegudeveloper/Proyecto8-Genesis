@@ -15,13 +15,13 @@ Solo debes ingresar al siguiente link para ver el Proyecto: [Proyecto 8](https:/
 <details>
     <summary>🖥 Desktop version</summary>
 
-![]()
+![](https://github.com/diegudeveloper/Proyecto8-Genesis/blob/gh-pages/img/desktop.png)
 
 </details>
 
 <details>
     <summary>📱 Mobile version</summary>
     
-![]()
+![](https://github.com/diegudeveloper/Proyecto8-Genesis/blob/gh-pages/img/movil.png)
 
 </details>
